@@ -18,4 +18,17 @@ Mr Smith
 Ms Davis
 Mrs. Robinson
 Mr. T
+
+cat
+mat
+pat
+bat
 '''
+
+sentence = 'Start a sentence then bring it to an end'
+
+pattern = re.compile(r'[^b]at')
+matches = pattern.finditer(text_to_search)
+
+for match in matches:
+    print(match)
