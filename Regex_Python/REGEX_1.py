@@ -27,7 +27,7 @@ bat
 
 sentence = 'Start a sentence then bring it to an end'
 
-pattern = re.compile(r'[^b]at')
+pattern = re.compile(r'Mr\.?\s[A-Z]\w*')
 matches = pattern.finditer(text_to_search)
 
 for match in matches:
