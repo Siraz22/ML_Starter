@@ -19,7 +19,6 @@ print(filtered_sent)
 
 #STEMMING WORDS
 from nltk.stem import PorterStemmer
-sentences = sent_tokenize(example_text)
 
 stemmer = PorterStemmer()
 stemmed_sent = []
@@ -27,4 +26,17 @@ stemmed_sent = []
 for word in words:
     stemmed_sent.append(stemmer.stem(word))
 
+stemmed_sent = ' '.join(stemmed_sent)
 print(stemmed_sent)
+
+#LEMMATIZATION - kind of like stemming?
+from nltk.stem import WordNetLemmatizer
+
+lemmatizer = WordNetLemmatizer()
+lemmatized_sent = []
+
+for word in words:
+    lemmatized_sent.append(lemmatizer.lemmatize(word))
+
+lemmatized_sent = ' '.join(lemmatized_sent)
+print(lemmatized_sent)
