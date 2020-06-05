@@ -40,3 +40,11 @@ for word in words:
 
 lemmatized_sent = ' '.join(lemmatized_sent)
 print(lemmatized_sent)
+
+# PART OF SPEECH TAGGING - kind of like tokenizing?
+tagged = []
+
+tagged.append(nltk.pos_tag(words))
+
+print('-'*30)
+print(tagged)
